@@ -1,0 +1,29 @@
+package it.telecom.CCC_Auth;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Auth {
+	
+	@PostMapping("auth/login")
+	public String login(@RequestBody UserData userData) {
+		
+		return "username: "+ userData.getName() + " password:  "+ userData.getPassword();
+		
+	}
+	
+	@PostMapping("auth/signup")
+	public String signUp(@RequestBody SignUpData signUpData) {
+		return "Account created: " + signUpData.toString();
+	}
+	
+	@GetMapping("resetPassword")
+	public String forgetPassword() {
+		
+		return "Sent otp to email";
+	}
+
+}

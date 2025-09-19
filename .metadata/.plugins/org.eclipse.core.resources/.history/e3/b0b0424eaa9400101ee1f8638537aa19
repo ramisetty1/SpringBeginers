@@ -1,0 +1,28 @@
+package it.telecom.CCC_Auth;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GetApi {
+	
+	
+	@GetMapping("/c/{courseid}")
+	public String getCourses(@PathVariable String courseid) {
+		
+		return " courseid ";
+	}
+	
+	
+	https://www.youtube.com/watch?v=w7HUkym6XKE
+		
+	@GetMapping("watch")	
+	public String getVideo(@RequestParam String v) {
+		return "videoId: " + v;
+		
+	}
+	
+
+}

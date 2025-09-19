@@ -1,0 +1,5 @@
+package it.telecom.CCC_Auth;
+
+public class SignUpData {
+
+}

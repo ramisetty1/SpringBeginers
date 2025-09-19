@@ -1,0 +1,37 @@
+package it.telecom.CCC_Auth;
+
+import java.util.jar.Attributes.Name;
+
+public class SignUpData {
+
+	
+	public String firstName;
+	public String lastName;
+	public String email;
+	public String password;
+	
+	
+	public void setName(String name) {
+		this.firstName= name;
+	}
+	public String getName() {
+		return firstName;
+	}
+	
+	public void setPassword(String password) {
+		this.lastName= password;
+	}
+	public String getPassword() {
+		return lastName;
+	}
+	
+	public void setEmail(String email) {
+		this.email= email;
+	}
+	public String getEmail() {
+		return email;
+	}
+	
+	
+	
+}
