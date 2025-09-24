@@ -3,6 +3,8 @@ package it.telecom.CCC_Auth.service;
 import org.springframework.stereotype.Service;
 
 import it.telecom.CCC_Auth.pojo.LoginData;
+import it.telecom.CCC_Auth.pojo.ResetData;
+import it.telecom.CCC_Auth.pojo.SignUpData;
 
 @Service
 public class AuthService {
@@ -24,6 +26,19 @@ public class AuthService {
 			return"invalid credentials";
 		}
 		
-			}
+		}
+	
+	public String signup(SignUpData signUpData) {
+		
+		return "Account created";
+	}
+	
+	
+	
+	public String resetPassword(ResetData resetData) {
+		
+		return "otp sent to email. please reset your password: " + resetData.getEmail();
+		
+	}
 
 }
