@@ -1,7 +1,8 @@
 package it.telecom.CCC_Auth;
 
+import lombok.Data;
 
-
+@Data
 public class SignUpData {
 
 	
@@ -11,15 +12,15 @@ public class SignUpData {
 	public String password;
 	
 	
-	public void setName(String firstName) {
+	/*public void setName(String firstName) {
 		this.firstName= firstName;
 	}
 	public String getName() {
 		return firstName;
 	}
 	
-	public void setLastname(String lastname) {
-		this.lastName= lastname;
+	public void setLastname(String lastName) {
+		this.lastName= lastName;
 	}
 	public String getLastname() {
 		return lastName;
@@ -38,6 +39,7 @@ public class SignUpData {
 	public String getPassword() {
 		return password;
 	}
+	*/
 	
 	
 	

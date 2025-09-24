@@ -1,0 +1,24 @@
+package it.telecom.CCC_Auth;
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Data
+@Setter
+@Getter
+public class ResetData {
+	
+	public String password;
+
+	
+	
+	/*public void setPassword(String password) {
+		this.password= password;
+	}
+	public String getPassword() {
+		return password;
+	}*/
+	
+
+}

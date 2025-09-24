@@ -1,12 +1,15 @@
 package it.telecom.CCC_Auth;
 
+import lombok.Data;
+
+@Data
 public class UserData {
 	
 	
 	public String name;
 	public String password;
 	
-	public void setName(String name) {
+	/*public void setName(String name) {
 		this.name = name;
 		
 	}
@@ -24,7 +27,7 @@ public class UserData {
 		
 		return password;
 	}
-	
+	*/
 	
 
 }
